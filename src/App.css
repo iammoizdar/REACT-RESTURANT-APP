@@ -158,6 +158,7 @@ main {
   cursor: pointer;
 }
 
+
 .gallery-wrapper {
   display: flex;
   flex-direction: column;
@@ -203,6 +204,10 @@ main {
   }
 
   .leftcontent-img img {
+    width: 260px;
+  }
+
+  .ourfoodgallery img {
     width: 260px;
   }
 }
