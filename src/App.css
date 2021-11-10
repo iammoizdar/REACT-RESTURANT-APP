@@ -208,6 +208,6 @@ main {
   }
 
   .ourfoodgallery img {
-    width: 260px;
+    display: none;
   }
 }
