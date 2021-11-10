@@ -166,6 +166,7 @@ main {
 
 }
 
+
 @media screen and (max-width: 1200px) {
   .main-section {
     grid-gap: 50px;
@@ -195,5 +196,13 @@ main {
 
   .Navbar {
     justify-content: center;
+  }
+
+  .left-side img {
+    width: 260px;
+  }
+
+  .leftcontent-img img {
+    width: 260px;
   }
 }
