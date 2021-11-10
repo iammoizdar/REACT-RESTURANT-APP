@@ -18,6 +18,10 @@ h3 {
   font-weight: normal;
 }
 
+p {
+  font-size: 33px;
+}
+
 @font-face {
   font-family: Aachen BT;
   src: url(./fonts/aachenn.ttf);
@@ -63,7 +67,7 @@ nav a:nth-child(2) {
   max-width: 1600px;
   width: 100%;
   margin: 0 auto;
-  padding: 30px 66px;
+  padding: 30px 35px;
 }
 
 .wrapper {
@@ -142,7 +146,7 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  min-height: 2450px;
+  min-height: 2382px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -167,6 +171,30 @@ main {
 
 }
 
+.EnjoyFoodBanner {
+  background: url(images/enjoy-our-food.png)no-repeat;
+  background-size: cover;
+  min-height: 960px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+}
+
+.enjoybox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 8px solid #e58f00;
+  width: 730px;
+  min-height: 568px;
+  flex-direction: column;
+  margin: 0 auto;
+  grid-gap: 30px;
+  background: rgba(29, 29, 35, 0.74);
+  text-align: center;
+}
+
 
 @media screen and (max-width: 1200px) {
   .main-section {
@@ -175,6 +203,7 @@ main {
     text-align: center;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
   }
 
   .aboutsection {
@@ -184,15 +213,49 @@ main {
   }
 }
 
+@media screen and (max-width: 992px) {
+  .enjoybox {
+    width: 524px;
+  }
+
+  .enjoybox p {
+    font-size: 24px;
+  }
+
+
+}
+
 @media screen and (max-width: 1024px) {
   nav a {
     margin-left: 18px;
   }
+
 }
 
 @media screen and (max-width: 768px) {
+  h1 {
+    font-size: 40px;
+    line-height: 45px;
+  }
+
+  h3 {
+    font-size: 34px !important;
+  }
+
+  p {
+    font-size: 19px !important;
+  }
+
   nav {
     display: none;
+  }
+
+  main {
+    min-height: 1000px;
+  }
+
+  .main-section {
+    margin: 4rem auto 0;
   }
 
   .Navbar {
@@ -200,14 +263,44 @@ main {
   }
 
   .left-side img {
-    width: 260px;
+    width: 360px;
   }
 
   .leftcontent-img img {
-    width: 260px;
+    width: 360px;
   }
 
   .ourfoodgallery img {
     width: 260px;
+  }
+
+  .enjoybox {
+    width: 424px;
+  }
+
+  .gallery-wrapper {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  p {
+    font-size: 16px !important;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+
+  .enjoybox {
+    width: 250px;
+  }
+
+  .leftcontent-img img {
+    width: 250px;
+  }
+
+  .left-side img {
+    width: 250px;
   }
 }
